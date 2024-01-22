@@ -62,6 +62,12 @@ public Action Hook_StartTouch(int client, int other)
 
         if (_fAvgVelocity > 800)
         {
+            if (_fClient1Velocity == 0) {
+                _fClient1Velocity = 50.0;
+            }
+            else if (_fClient2Velocity == 0) {
+                _fClient2Velocity = 50.0;
+            }
             if (_fClient1Velocity > _fClient2Velocity)
             {
                 _fVelocityDiff = (_fClient2Velocity/_fClient1Velocity);
@@ -76,4 +82,5 @@ public Action Hook_StartTouch(int client, int other)
             }
         }
     }
+    return Plugin_Handled;
 }
