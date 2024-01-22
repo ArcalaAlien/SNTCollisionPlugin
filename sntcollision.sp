@@ -6,7 +6,7 @@ public Plugin:myinfo =
 	name = "SNT Collision Plugin",
 	author = "Arcala the Gyiyg",
 	description = "When two enemy players collide, checks their speeds ",
-	version = "1.0.1",
+	version = "1.0.2",
 	url = "N/A"
 }
 
